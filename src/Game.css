@@ -1,5 +1,5 @@
 h1 {
-    text-align: end;
+    text-align: center;
 }
 
 .info {
@@ -7,6 +7,10 @@ h1 {
 }
 
 .cards {
+    display: flex;
+    justify-content: space-around;
+}
+.scores {
     display: flex;
     justify-content: space-around;
 }

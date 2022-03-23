@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import update from 'immutability-helper';
+import axios from 'axios';
 
 import './Game.css';
 import Card from './Card';
@@ -19,15 +20,37 @@ export default class Game extends React.Component {
     computerUncovered: false,
     selectedProperty: '',
     playersTurn : true,
-    player : [
-      new Animal('Elefant', 'placeholder.png', 3.3, 6000, 70, 1 ,40),
-      new Animal('Flusspferd', 'placeholder.png', 1.5, 1800, 50, 1 ,30),
-    ],
-    computer : [
-      new Animal('Nashorn', 'placeholder.png', 1.9, 2300, 50, 1, 50),
-      new Animal('Krokodil', 'placeholder.png', 5.2, 1000, 70, 60, 29),
-    ],
+    player : [],
+    computer : [],
   };
+
+  async componentDidMount() {
+    const { data } = await axios.get('http://localhost:3001/card');
+    const computer = [];
+    const player = [];
+    data.forEach( (card,index) => {
+      const animal = new Animal(
+        card.name,
+        card.image,
+        card.size,
+        card.weight,
+        card.age,
+        card.offspring,
+        card.speed
+      );
+      if(index % 2 === 0) {
+        computer.push(animal);
+      }else{
+        player.push(animal);
+      }
+    });
+    this.setState( state =>
+      update(state, {
+        player: { $set:player},
+        computer : { $set:computer},
+      }),
+    );
+  }
 
   getSelectPropertyHandler() {
     return property => this.play(property);
@@ -111,17 +134,17 @@ export default class Game extends React.Component {
           <div>Computerkarten: {computer.length}</div>
         </div>
         <div className="cards">
-          <Card
+          {player[0] && <Card
             animal={player[0]}
             uncovered={true}
             selectedProperty={selectedProperty}
             onSelectProperty={this.getSelectPropertyHandler.bind(this)()}
-          />
-          <Card
+          />}
+          {computer[0] && <Card
             animal={computer[0]}
             uncovered={computerUncovered}
             selectedProperty={selectedProperty}
-          />
+          />}
         </div>
       </div>
     );

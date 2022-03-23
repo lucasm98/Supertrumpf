@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -34,6 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../timer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -62,6 +61,8 @@
       <workItem from="1647177343448" duration="5390000" />
       <workItem from="1647273631696" duration="1597000" />
       <workItem from="1647693124185" duration="2824000" />
+      <workItem from="1647697935574" duration="578000" />
+      <workItem from="1648053627266" duration="1573000" />
     </task>
     <servers />
   </component>

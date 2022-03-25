@@ -1,0 +1,2 @@
+Data server start
+yarn json-server -p 3001 -w data.json

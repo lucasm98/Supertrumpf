@@ -1,14 +1,13 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import update from 'immutability-helper';
-import axios from 'axios';
 
 import GameComponent from './Game';
 import Animal from './Animal';
 
 export default class Game extends React.Component {
   constructor(props) {
-    super(pros);
+    super(props);
 
     this.play = this.play.bind(this);
   }
@@ -29,32 +28,20 @@ export default class Game extends React.Component {
     computer : [],
   };
 
-  async componentDidMount() {
-    const { data } = await axios.get('http://localhost:3001/card');
-    const computer = [];
-    const player = [];
-    data.forEach( (card,index) => {
-      const animal = new Animal(
-        card.name,
-        card.image,
-        card.size,
-        card.weight,
-        card.age,
-        card.offspring,
-        card.speed
+  componentDidUpdate(prevProps) {
+    if (
+      prevProps.player.length === 0 &&
+      this.props.player.length > 0 &&
+      prevProps.computer.length === 0 &&
+      this.props.computer.length > 0
+    ) {
+      this.setState(state =>
+        update(state, {
+          player: { $set: this.props.player },
+          computer: { $set: this.props.computer },
+        })
       );
-      if(index % 2 === 0) {
-        computer.push(animal);
-      }else{
-        player.push(animal);
-      }
-    });
-    this.setState( state =>
-      update(state, {
-        player: { $set:player},
-        computer : { $set:computer},
-      }),
-    );
+    }
   }
 
   compare(property) {

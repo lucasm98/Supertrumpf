@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Help.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/withCards.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/withCards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/DealCards.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +61,23 @@
       <workItem from="1647693124185" duration="2824000" />
       <workItem from="1647697935574" duration="578000" />
       <workItem from="1648053627266" duration="4255000" />
-      <workItem from="1648217380512" duration="3155000" />
+      <workItem from="1648217380512" duration="3233000" />
+      <workItem from="1648228298622" duration="1921000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

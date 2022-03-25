@@ -2,10 +2,14 @@ import React from 'react';
 
 import './App.css';
 import Game from './Game.container';
-import withCards from './withCards';
-
-const GameWithCards = withCards(Game);
+import DealCards from './DealCards';
 
 export default function App() {
-  return <GameWithCards title="Supertrumpf" />;
+  return (
+    <DealCards>
+      {(computer, player) => (
+        <Game computer={computer} player={player} title="Supertrumpf" />
+      )}
+    </DealCards>
+  );
 }

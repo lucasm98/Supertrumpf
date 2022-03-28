@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './Card.css';
 import Animal from './Animal';
-import DarkMode from '.DarkMode';
+import DarkMode from './DarkMode';
 
 export default function Card({
   animal,

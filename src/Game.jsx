@@ -14,7 +14,7 @@ export default function Game({
   play,
 }){
   return (
-    <div>
+    <>
       <h1>{title}</h1>
       <div className="info">
         {playersTurn ? 'Du bist' : 'Der Computer ist'} an der Reihe
@@ -37,7 +37,7 @@ export default function Game({
           />
         )}
       </div>
-    </div>
+    </>
   );
 }
 

@@ -33,7 +33,7 @@ tr:nth-child(2n -1).active,
 
 .dark tr:nth-child(2n -1).active,
 .dark .active{
-    background-color: darkblue;
+    background-color: darkgreen;
 }
 
 table {

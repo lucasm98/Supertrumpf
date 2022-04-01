@@ -5,12 +5,19 @@ import './Card.css';
 import Animal from './Animal';
 import DarkMode from './DarkMode';
 
-export default function Card({
+interface Props {
+  animal: Animal;
+  uncovered: boolean;
+  onSelectProperty?: (property: keyof Animal) => void;
+  selectedProperty?: keyof Animal | '';
+}
+
+export default function Card ({
   animal,
   uncovered,
   onSelectProperty,
   selectedProperty,
-}) {
+}: Props) {
   const front = (
     <div className="card">
       <h1>{animal.name ? animal.name : 'Unbekannt'}</h1>
@@ -26,17 +33,19 @@ export default function Card({
         <tbody>
           {Object.keys(Animal.properties).map((property) => {
             const animalProperty = Animal.properties[property];
+            const propertyValue = animal[property as keyof Animal];
             return (
               <tr
                 key={property}
                 className={selectedProperty === property ? 'active' : ''}
                 onClick={() => {
-                  onSelectProperty(property);
+                  onSelectProperty &&
+                  onSelectProperty(property as keyof Animal);
                 }}
               >
                 <td>{animalProperty.label}</td>
                 <td>
-                  {animal[property]}
+                  {propertyValue}
                   &nbsp;
                   {animalProperty.unit}
                 </td>

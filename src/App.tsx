@@ -4,7 +4,11 @@ import './App.css';
 import Game from './Game';
 import DarkMode from './DarkMode';
 
-export default class App extends React.Component {
+interface State {
+  darkMode: boolean;
+}
+
+export default class App extends React.Component<{}, State>{
   state = {
     darkMode: false,
   };
@@ -17,6 +21,7 @@ export default class App extends React.Component {
     return (
       <DarkMode.Provider value={this.state.darkMode}>
         <button onClick={this.toggleDarkMode}>Toggle Dark Mode</button>
+
         <Game title="Supertrumpf" />
       </DarkMode.Provider>
     );

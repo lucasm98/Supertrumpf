@@ -1,11 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
 import Card from './Card';
 import './Game.css';
 import useCards from './useCards';
 
-export default function Game({ title }) {
+interface Props {
+  title: string;
+}
+
+export default function Game({ title }: Props) {
   const [state, play] = useCards();
 
   return (
@@ -34,7 +37,3 @@ export default function Game({ title }) {
     </>
   );
 }
-
-Game.propTypes = {
-  title: PropTypes.string.isRequired,
-};

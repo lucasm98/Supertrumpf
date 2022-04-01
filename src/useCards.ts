@@ -5,13 +5,31 @@ import axios from 'axios';
 import Animal from './Animal';
 import selectRandomProperty from './selectRandomProperty';
 
-export default function useCards() {
-  const [state, setState] = useState({
+interface Card {
+  name: string;
+  image: string;
+  size: string;
+  weight: string;
+  age: string;
+  offspring: string;
+  speed: string;
+}
+
+interface State {
+  computerUncovered: boolean;
+  selectedProperty?: keyof Animal | '';
+  playersTurn: boolean;
+  player: Animal[];
+  computer: Animal[];
+}
+
+export default function useCards(): [State, (property: keyof Animal) => void] {
+  const [state, setState] = useState<State>({
     computerUncovered: false,
     selectedProperty: '',
     playersTurn: true,
     player: [],
-    computer: []
+    computer: [],
   });
 
   useEffect(() => {
@@ -25,7 +43,7 @@ export default function useCards() {
   useEffect(() => {
     if(state.selectedProperty !== '') {
       setTimeout(() => {
-        compare(state.selectedProperty);
+        compare(state.selectedProperty as keyof Animal);
       },2000);
     }
   }, [state.selectedProperty]);
@@ -43,7 +61,7 @@ export default function useCards() {
     }
   }, [state.computerUncovered, state.selectedProperty, state.playersTurn]);
 
-  function compare(property) {
+  function compare(property: keyof Animal) {
     let playersTurn = state.playersTurn;
     const firstPlayer = state.player[0];
     let player = update(state.player, {$splice: [[0, 1]]});
@@ -78,7 +96,7 @@ export default function useCards() {
     );
   }
 
-  function play(property) {
+  function play(property: keyof Animal) {
     setState( state =>
       update(state, {
         selectedProperty: { $set: property},
@@ -87,9 +105,9 @@ export default function useCards() {
     );
   }
 
-  function dealCards(cards) {
-    const computer = [];
-    const player = [];
+  function dealCards(cards: Card[]) {
+    const computer: Animal[] = [];
+    const player: Animal[] = [];
 
     cards.forEach((card, index) => {
       const animal = new Animal(

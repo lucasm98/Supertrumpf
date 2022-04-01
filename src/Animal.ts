@@ -1,0 +1,20 @@
+export default class Animal {
+  static properties: { [key: string]: {label: string; unit: string}} = {
+    size: { label: 'Größe', unit: 'm' },
+    weight: { label: 'Gewicht', unit: 'kg' },
+    age: { label: 'Alter', unit: 'Jahre' },
+    offspring: { label: 'Nachkommen', unit: '' },
+    speed: { label: 'Geschwindigkeit', unit: 'km/h' },
+  };
+
+  constructor(
+    public name: string,
+    public image: string,
+    public size: string,
+    public weight: string,
+    public age: string,
+    public offspring: string,
+    public speed: string
+  )
+  {}
+}

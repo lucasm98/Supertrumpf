@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
-import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
-import './Card.css';
+import './Card.scss';
 import Animal from './Animal';
 import DarkMode from './DarkMode';
 
@@ -19,7 +19,7 @@ export default function Card ({
   selectedProperty,
 }: Props) {
   const front = (
-    <div className="card">
+    <>
       <h1>{animal.name ? animal.name : 'Unbekannt'}</h1>
       {animal.image && (
         <img
@@ -54,19 +54,16 @@ export default function Card ({
           })}
         </tbody>
       </table>
-    </div>
+    </>
   );
   const back = <div className="card back" />;
 
   const darkMode = useContext(DarkMode);
-  const darkModeClassName = darkMode ? 'dark' : 'light';
+  const cardClasses = classNames('card', {
+    back: !uncovered,
+    light: !darkMode,
+    dark: darkMode,
+  });
 
-  return <div className={darkModeClassName}>{uncovered? front : back}</div>;
+  return <div className={cardClasses}>{uncovered? front : ''}</div>;
 }
-
-Card.propTypes = {
-  uncovered: PropTypes.bool.isRequired,
-  animal: PropTypes.object.isRequired,
-  onSelectProperty: PropTypes.func,
-  selectedProperty: PropTypes.string,
-};

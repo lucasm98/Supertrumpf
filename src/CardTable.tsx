@@ -28,7 +28,7 @@ function CardTable({
           <tr
             style={
               ([
-                styles.tr,
+                styles[mode].hover,
                 index % 2 === 0 ? styles[mode].tr : '',
                 selectedProperty === property ? styles.activeRow : '',
               ] as unknown) as React.CSSProperties

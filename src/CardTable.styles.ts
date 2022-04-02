@@ -9,17 +9,24 @@ export default {
   activeRow: {
     backgroundColor: 'yellow',
   },
-  tr: {
-    ':hover': {
-      backgroundColor: 'lightblue',
-    },
-  },
   light: {
     tr: {
       backgroundColor: '#ddd',
     },
+    hover: {
+      ':hover': {
+        backgroundColor: 'lightblue',
+      },
+    }
   },
   dark: {
-    tr: { backgroundColor: '#666'},
+    tr: {
+      backgroundColor: '#666',
+    },
+    hover: {
+      ':hover': {
+        backgroundColor: 'darkblue',
+      },
+    }
   },
 };

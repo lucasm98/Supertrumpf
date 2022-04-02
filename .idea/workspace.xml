@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <workItem from="1648831262079" duration="1321000" />
       <workItem from="1648915185711" duration="2893000" />
       <workItem from="1648918096026" duration="501000" />
-      <workItem from="1648918608724" duration="162000" />
+      <workItem from="1648918608724" duration="1074000" />
     </task>
     <servers />
   </component>

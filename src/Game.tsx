@@ -11,10 +11,15 @@ interface Props {
 export default function Game({ title }: Props) {
   const [state, play] = useCards();
 
+  const infoStyles = {
+    color: state.playersTurn ? 'black' : 'darkgrey',
+    backgroundColor: state.playersTurn ? 'lightyellow' : 'white',
+  };
+
   return (
     <>
       <h1>{title}</h1>
-      <div className="info">
+      <div className="info" style={infoStyles}>
         {state.playersTurn ? 'Du bist' : 'Der Computer ist'} an der Reihe
       </div>
       <div className="cards">

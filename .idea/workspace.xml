@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/selectRandomProperty.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardTable.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardTable.styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JSON" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Card.tsx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jest-test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -91,7 +91,8 @@
       <workItem from="1648918608724" duration="3287000" />
       <workItem from="1648922331921" duration="760000" />
       <workItem from="1648979431886" duration="3464000" />
-      <workItem from="1648986919499" duration="2115000" />
+      <workItem from="1648986919499" duration="3678000" />
+      <workItem from="1649007323575" duration="452000" />
     </task>
     <servers />
   </component>

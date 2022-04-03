@@ -15,6 +15,9 @@ export const Tr = styled.tr`
     css`
       &:nth-child(2n) {
         background-color: #666;
+      };
+      &:hover {
+        background-color: darkgreen;
       }
   `}
 
@@ -23,12 +26,11 @@ export const Tr = styled.tr`
     css`
       &:nth-child(2n) {
         background-color: #ddd;
+      };
+      &:hover {
+        background-color: lightblue;
       }
   `}
-
-  :hover {
-    background-color: lightblue;
-  }
 
   ${(props: TrProps) =>
     props.active &&

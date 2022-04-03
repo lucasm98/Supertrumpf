@@ -13,7 +13,7 @@ interface Props {
   selectedProperty?: keyof Animal | '';
 }
 
-export default function Card ({
+export default function Card({
   animal,
   uncovered,
   onSelectProperty,
@@ -46,5 +46,5 @@ export default function Card ({
     dark: darkMode,
   });
 
-  return <div className={cardClasses}>{uncovered? front : ''}</div>;
+  return <div className={cardClasses}>{uncovered ? front : ''}</div>;
 }

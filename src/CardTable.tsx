@@ -1,55 +1,52 @@
 import React from 'react';
-import Radium from 'radium';
+import styled, { StyledProps } from 'styled-components';
 
 import Animal from './Animal';
-import styles from './CardTable.styles';
+import { Td, Tr } from './CardTable.styles';
 
 interface Props {
   animal: Animal;
   onSelectProperty?: (property: keyof Animal) => void;
   selectedProperty?: keyof Animal | '';
   darkMode: boolean;
+  className?: string;
 }
 
 function CardTable({
- animal,
- onSelectProperty,
- selectedProperty,
- darkMode,
-}: Props){
-  const mode = darkMode ? 'dark' : 'light';
+  animal,
+  onSelectProperty,
+  selectedProperty,
+  darkMode,
+  className,
+}: Props) {
   return (
-    <table style={styles.table}>
+    <table className={className}>
       <tbody>
-      {Object.keys(Animal.properties).map((property, index) => {
-        const animalProperty = Animal.properties[property];
-        const propertyValue = animal[property as keyof Animal];
-        return (
-          <tr
-            style={
-              ([
-                styles[mode].hover,
-                index % 2 === 0 ? styles[mode].tr : '',
-                selectedProperty === property ? styles.activeRow : '',
-              ] as unknown) as React.CSSProperties
-            }
-            key={property}
-            onClick={() => {
-              onSelectProperty && onSelectProperty(property as keyof Animal);
-            }}
-          >
-            <td style={styles.td}>{animalProperty.label}</td>
-            <td style={styles.td}>
-              {propertyValue}
-              &nbsp;
-              {animalProperty.unit}
-            </td>
-          </tr>
-        );
-      })}
+        {Object.keys(Animal.properties).map((property, index) => {
+          const animalProperty = Animal.properties[property];
+          const propertyValue = animal[property as keyof Animal];
+          return (
+            <Tr
+              darkMode={darkMode}
+              active={selectedProperty === property}
+              key={property}
+              onClick={() => {
+                onSelectProperty && onSelectProperty(property as keyof Animal);
+              }}
+            >
+              <Td>{animalProperty.label}</Td>
+              <Td>
+                {propertyValue}&nbsp;{animalProperty.unit}
+              </Td>
+            </Tr>
+          );
+        })}
       </tbody>
     </table>
   );
 }
 
-export default Radium(CardTable);
+export default styled(CardTable)`
+  width: 100%;
+  border-collapse: collapse;
+`;

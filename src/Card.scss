@@ -10,33 +10,18 @@
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
 
     &.light {
-        color: $lightFrontColor;
+        color: $lightFontColor;
         background-color: $lightBackground;
 
         &.back {
             background-color: $lightBackSide;
         }
-
-        tr:nth-child(2n-1).active,
-        .active {
-            background-color: yellow;
-        }
     }
 
     &.dark {
-        color: $darkFrontColor;
+        color: $darkFontColor;
         background-color: $darkBackground;
-
         &.back {
-            background-color: $darkBackSide;
-        }
-
-        tr:nth-child(2n-1) {
-            background-color: #666;
-        }
-
-        tr:nth-child(2n-1).active,
-        .active {
             background-color: $darkBackSide;
         }
     }
@@ -44,19 +29,6 @@
     h1 {
         font-size: 20px;
         margin: 0 0 10px 0;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    tr:nth-child(2n-1) {
-        background-color: #ddd;
-    }
-
-    td {
-        padding: 5px 0;
     }
 
     img {

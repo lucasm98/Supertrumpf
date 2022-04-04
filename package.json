@@ -51,11 +51,14 @@
   "devDependencies": {
     "@types/classnames": "^2.3.1",
     "@types/radium": "^0.24.4",
+    "@types/react-test-renderer": "^17.0.1",
     "@types/styled-components": "^5.1.24",
     "eslint": "^8.12.0",
     "eslint-plugin-react-hooks": "^4.4.0",
+    "jest": "^27.5.1",
     "json-server": "^0.17.0",
     "node-sass": "^7.0.1",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react-test-renderer": "^18.0.0"
   }
 }

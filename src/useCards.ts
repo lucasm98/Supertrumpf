@@ -1,19 +1,9 @@
-import {useState , useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import update from 'immutability-helper';
 import axios from 'axios';
 
 import Animal from './Animal';
 import selectRandomProperty from './selectRandomProperty';
-
-interface Card {
-  name: string;
-  image: string;
-  size: string;
-  weight: string;
-  age: string;
-  offspring: string;
-  speed: string;
-}
 
 interface State {
   computerUncovered: boolean;
@@ -35,21 +25,21 @@ export default function useCards(): [State, (property: keyof Animal) => void] {
   useEffect(() => {
     const fetchData = async () => {
       const { data } = await axios.get('http://localhost:3001/card');
-      dealCards(data)
+      dealCards(data);
     };
     fetchData();
   }, []);
 
   useEffect(() => {
-    if(state.selectedProperty !== '') {
+    if (state.selectedProperty !== '') {
       setTimeout(() => {
         compare(state.selectedProperty as keyof Animal);
-      },2000);
+      }, 2000);
     }
   }, [state.selectedProperty]);
 
   useEffect(() => {
-    if(
+    if (
       state.computerUncovered === false &&
       state.selectedProperty === '' &&
       state.playersTurn === false
@@ -70,20 +60,22 @@ export default function useCards(): [State, (property: keyof Animal) => void] {
     if(firstPlayer[property] > firstComputer[property]) {
       playersTurn = true;
       player = update(player, { $push: [firstPlayer, firstComputer]});
-      if(computer.length === 0 ){
+      if(computer.length === 0){
         alert('Player wins'); return;
       }
     } else if(firstPlayer[property] < firstComputer[property]){
       playersTurn = false;
       computer = update(computer, { $push: [firstPlayer,firstComputer]});
-      if(player.length === 0 ) {
+
+      if(player.length === 0) {
         alert('Computer wins');
+        return;
       }
     } else {
       player = update(player, { $push: [firstPlayer]});
       computer = update(computer, { $push: [firstComputer]});
     }
-    setState( state =>
+    setState(state =>
       update(state, {
         $set: {
           computerUncovered: false,
@@ -92,12 +84,12 @@ export default function useCards(): [State, (property: keyof Animal) => void] {
           player,
           computer,
         },
-      }),
+      })
     );
   }
 
   function play(property: keyof Animal) {
-    setState( state =>
+    setState(state =>
       update(state, {
         selectedProperty: { $set: property},
         computerUncovered: { $set: true},
@@ -105,7 +97,7 @@ export default function useCards(): [State, (property: keyof Animal) => void] {
     );
   }
 
-  function dealCards(cards: Card[]) {
+  function dealCards(cards: Animal[]) {
     const computer: Animal[] = [];
     const player: Animal[] = [];
 

@@ -1,6 +1,6 @@
 import selectRandomProperty from './selectRandomProperty';
 
-describe('selectRandomPrperty', () => {
+describe('selectRandomProperty', () => {
   it('should return the string "age"', () => {
     const originalRandom = global.Math.random;
     global.Math.random = jest.fn().mockReturnValue(0.41);

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/selectRandomProperty.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Card.spec.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selectRandomProperty.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectRandomProperty.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selectRandomProperty.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectRandomProperty.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useCards.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/useCards.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JSON" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jest-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../8_16/variables.scss" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,7 +52,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../Card.tsx" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../8_16/variables.scss" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -92,7 +98,9 @@
       <workItem from="1648922331921" duration="760000" />
       <workItem from="1648979431886" duration="3464000" />
       <workItem from="1648986919499" duration="3678000" />
-      <workItem from="1649007323575" duration="452000" />
+      <workItem from="1649007323575" duration="1703000" />
+      <workItem from="1649009041885" duration="1379000" />
+      <workItem from="1649086228609" duration="656000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Snapshots should match the snapshot 1`] = `
+<div
+  className="card light"
+>
+  <h1>
+    Elefant
+  </h1>
+  <img
+    alt="Elefant"
+    height="200"
+    src="/Bild"
+    width="200"
+  />
+  <table
+    className="sc-htpNat hAqBck"
+  >
+    <tbody>
+      <tr
+        className="sc-bwzfXH fLauie"
+        onClick={[Function]}
+      >
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          Größe
+        </td>
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          3.3
+           
+          m
+        </td>
+      </tr>
+      <tr
+        className="sc-bwzfXH fLauie"
+        onClick={[Function]}
+      >
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          Gewicht
+        </td>
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          6000
+           
+          kg
+        </td>
+      </tr>
+      <tr
+        className="sc-bwzfXH fLauie"
+        onClick={[Function]}
+      >
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          Alter
+        </td>
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          70
+           
+          Jahre
+        </td>
+      </tr>
+      <tr
+        className="sc-bwzfXH fLauie"
+        onClick={[Function]}
+      >
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          Nachkommen
+        </td>
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          1
+           
+          
+        </td>
+      </tr>
+      <tr
+        className="sc-bwzfXH fLauie"
+        onClick={[Function]}
+      >
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          Geschwindigkeit
+        </td>
+        <td
+          className="sc-bdVaJa raUea"
+        >
+          40
+           
+          km/h
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

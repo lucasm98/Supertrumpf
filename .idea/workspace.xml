@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Card.spec.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/selectRandomProperty.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectRandomProperty.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/selectRandomProperty.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectRandomProperty.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/useCards.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/useCards.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +93,7 @@
       <workItem from="1648986919499" duration="3678000" />
       <workItem from="1649007323575" duration="1703000" />
       <workItem from="1649009041885" duration="1379000" />
-      <workItem from="1649086228609" duration="656000" />
+      <workItem from="1649086228609" duration="1324000" />
     </task>
     <servers />
   </component>

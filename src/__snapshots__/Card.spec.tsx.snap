@@ -14,20 +14,20 @@ exports[`Card Snapshots should match the snapshot 1`] = `
     width="200"
   />
   <table
-    className="sc-htpNat hAqBck"
+    className="sc-dkzDqf ePGVba"
   >
     <tbody>
       <tr
-        className="sc-bwzfXH fLauie"
+        className="sc-gsnTZi iytFdT"
         onClick={[Function]}
       >
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           Größe
         </td>
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           3.3
            
@@ -35,16 +35,16 @@ exports[`Card Snapshots should match the snapshot 1`] = `
         </td>
       </tr>
       <tr
-        className="sc-bwzfXH fLauie"
+        className="sc-gsnTZi iytFdT"
         onClick={[Function]}
       >
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           Gewicht
         </td>
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           6000
            
@@ -52,16 +52,16 @@ exports[`Card Snapshots should match the snapshot 1`] = `
         </td>
       </tr>
       <tr
-        className="sc-bwzfXH fLauie"
+        className="sc-gsnTZi iytFdT"
         onClick={[Function]}
       >
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           Alter
         </td>
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           70
            
@@ -69,33 +69,32 @@ exports[`Card Snapshots should match the snapshot 1`] = `
         </td>
       </tr>
       <tr
-        className="sc-bwzfXH fLauie"
+        className="sc-gsnTZi iytFdT"
         onClick={[Function]}
       >
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           Nachkommen
         </td>
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           1
            
-          
         </td>
       </tr>
       <tr
-        className="sc-bwzfXH fLauie"
+        className="sc-gsnTZi iytFdT"
         onClick={[Function]}
       >
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           Geschwindigkeit
         </td>
         <td
-          className="sc-bdVaJa raUea"
+          className="sc-bczRLJ OKfSj"
         >
           40
            

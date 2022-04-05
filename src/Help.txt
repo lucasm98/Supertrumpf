@@ -1,2 +1,9 @@
 Data server start
 yarn json-server -p 3001 -w data.json
+
+check dependencies
+npm-check-updates -u
+
+yarn upgrade
+yarn outdated
+yarn install

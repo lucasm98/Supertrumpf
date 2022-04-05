@@ -4,7 +4,7 @@
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__snapshots__/Card.spec.tsx.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__snapshots__/Card.spec.tsx.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Help.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../8_16/variables.scss" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -99,7 +99,8 @@
       <workItem from="1649086228609" duration="1324000" />
       <workItem from="1649169960619" duration="230000" />
       <workItem from="1649180472280" duration="534000" />
-      <workItem from="1649181029499" duration="90000" />
+      <workItem from="1649181029499" duration="1330000" />
+      <workItem from="1649182405997" duration="156000" />
     </task>
     <servers />
   </component>

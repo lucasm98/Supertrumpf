@@ -18,7 +18,7 @@ exports[`Card Snapshots should match the snapshot 1`] = `
   >
     <tbody>
       <tr
-        className="sc-gsnTZi iytFdT"
+        className="sc-gsnTZi iytFdT size"
         onClick={[Function]}
       >
         <td
@@ -35,7 +35,7 @@ exports[`Card Snapshots should match the snapshot 1`] = `
         </td>
       </tr>
       <tr
-        className="sc-gsnTZi iytFdT"
+        className="sc-gsnTZi iytFdT weight"
         onClick={[Function]}
       >
         <td
@@ -52,7 +52,7 @@ exports[`Card Snapshots should match the snapshot 1`] = `
         </td>
       </tr>
       <tr
-        className="sc-gsnTZi iytFdT"
+        className="sc-gsnTZi iytFdT age"
         onClick={[Function]}
       >
         <td
@@ -69,7 +69,7 @@ exports[`Card Snapshots should match the snapshot 1`] = `
         </td>
       </tr>
       <tr
-        className="sc-gsnTZi iytFdT"
+        className="sc-gsnTZi iytFdT offspring"
         onClick={[Function]}
       >
         <td
@@ -85,7 +85,7 @@ exports[`Card Snapshots should match the snapshot 1`] = `
         </td>
       </tr>
       <tr
-        className="sc-gsnTZi iytFdT"
+        className="sc-gsnTZi iytFdT speed"
         onClick={[Function]}
       >
         <td

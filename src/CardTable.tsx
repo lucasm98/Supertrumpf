@@ -33,6 +33,7 @@ function CardTable({
               onClick={() => {
                 onSelectProperty && onSelectProperty(property as keyof Animal);
               }}
+              className={property}
             >
               <Td>{animalProperty.label}</Td>
               <Td>

@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Game.spec.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/__snapshots__/Card.spec.tsx.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/Login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Login/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Animal.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Card.spec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardTable.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/CardTable.spec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardTable.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/CardTable.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/CardTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DarkMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/DarkMode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.spec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selectRandomProperty.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/selectRandomProperty.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selectRandomProperty.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/selectRandomProperty.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useCards.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/useCards.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +53,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JSON" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../React-Buch/Listings-React-Buch/08_Testing/listings/listing8_18/src/CardTable.tsx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../React-Buch/Listings-React-Buch/09_Formulare/listings/listing9_4/src/login/Login.tsx" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../React-Buch/Listings-React-Buch/08_Testing/listings/listing8_18/src/CardTable.tsx" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../React-Buch/Listings-React-Buch/09_Formulare/listings/listing9_4/src/login/Login.tsx" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Game" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,7 +126,8 @@
       <workItem from="1649181029499" duration="1330000" />
       <workItem from="1649182405997" duration="373000" />
       <workItem from="1649260784654" duration="6351000" />
-      <workItem from="1649270418308" duration="612000" />
+      <workItem from="1649270418308" duration="804000" />
+      <workItem from="1649345365383" duration="5270000" />
     </task>
     <servers />
   </component>

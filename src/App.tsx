@@ -1,11 +1,11 @@
 import React from "react";
 
-import Form from "./admin/Form";
+import From from "./admin/Form";
 import axios from "axios";
 
 export default function App() {
   return (
-    <Form
+    <From
       onSubmit={animal => {
         const data = new FormData();
         data.append('name', animal.name);

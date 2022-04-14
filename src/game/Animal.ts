@@ -10,10 +10,10 @@ export default class Animal {
   constructor(
     public name: string,
     public image: string,
-    public size: number,
-    public weight: number,
-    public age: number,
-    public offspring: number,
-    public speed: number
+    public size: number | '',
+    public weight: number | '',
+    public age: number | '',
+    public offspring: number | '',
+    public speed: number | ''
   ) {}
 }

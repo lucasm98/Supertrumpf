@@ -14,7 +14,7 @@ export default function Form({ onSubmit, animal: initialAnimal }: Props) {
     <StyledForm
       onSubmit={e => {
         e.preventDefault();
-        onSubmit(animal)
+        onSubmit(animal);
       }}
     >
       <Row>
@@ -26,13 +26,17 @@ export default function Form({ onSubmit, animal: initialAnimal }: Props) {
           onChange={changeProperty}
         />
       </Row>
+      <Row>
+        <Label htmlFor="image">Bild:</Label>
+        <input type="file" id="image" onChange={changeProperty}/>
+      </Row>
       {Object.keys(Animal.properties).map(property => {
         let value = (animal as any)[property];
         value = value === 0 ? '' : value;
         return (
           <Row key={property}>
             <Label htmlFor={property}>
-              {Animal.properties[property].label}
+              {Animal.properties[property].label}:
             </Label>
             <input
               type="text"

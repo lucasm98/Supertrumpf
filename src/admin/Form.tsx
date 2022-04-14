@@ -1,5 +1,5 @@
 import React from "react";
-import Animal from "../Game/Animal";
+import Animal from "../game/Animal";
 import useCardAdmin from "./useCardAdmin";
 import { Label, Row, Form as StyledForm} from './Form.styles';
 

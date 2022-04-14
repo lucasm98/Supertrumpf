@@ -49,7 +49,7 @@ describe('Game', () => {
     });
 
 /*    it('should locate an element by testid', () => {
-        const { getByTestId } = render(<Game title="Testspiel" />);
+        const { getByTestId } = render(<game title="Testspiel" />);
 
         const cardsContainer = getByTestId('cards-container');
 

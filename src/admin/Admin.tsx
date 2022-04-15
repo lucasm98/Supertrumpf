@@ -7,7 +7,7 @@ export default function Admin() {
   const [animals, setAnimals] = useState<Animal[]>([]);
   useEffect(()=> {
     async function fetchData() {
-      const cards = await axios.get<Animal[]>('http://localhost:3001');
+      const cards = await axios.get<Animal[]>('http://localhost:3001/card');
       setAnimals(cards.data);
     }
     fetchData();

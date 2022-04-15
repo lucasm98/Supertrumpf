@@ -7,6 +7,8 @@ export default class Animal {
     speed: { label: 'Geschwindigkeit', unit: 'km/h' },
   };
 
+  public id?: number;
+
   constructor(
     public name: string,
     public image: string,

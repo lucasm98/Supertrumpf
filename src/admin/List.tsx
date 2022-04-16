@@ -1,21 +1,38 @@
 import React, {ChangeEvent, useState, useCallback, MouseEvent} from "react";
-import { Paper, Table ,TableHead, TableRow, TableCell, TableBody, TextField, TableSortLabel, Grid, Hidden } from '@material-ui/core';
+import {
+  Paper,
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+  TextField,
+  TableSortLabel,
+  Grid
+} from '@material-ui/core';
 import {IconButton} from "@material-ui/core";
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
+import AddIcon from '@material-ui/icons/Add';
 import Animal from "../game/Animal";
 import ConfirmDialog from "./ConfirmDialog";
+import Form from './Form';
+import { Fab } from "./List.styles";
 
 interface Props {
   animals: Animal[];
   onDelete: (id: number ) => void;
+  onSave: (animal: Animal) => void;
 }
 
-export default function List({animals, onDelete}: Props) {
+export default function List({animals, onDelete, onSave}: Props) {
   const [deleteDialog, setDeleteDialog] = useState<{
     open: boolean;
     id:number;
   }>( {open:false, id:0});
+  const [formDialog, setFormDialog] = useState<{
+    open: boolean;
+  }>({open: false});
   const [filter, setFilter] = useState('');
   const [sort, setSort] = useState<{
     orderBy: keyof Animal;
@@ -135,6 +152,23 @@ export default function List({animals, onDelete}: Props) {
           });
         }}
       />
+      <Form
+        onSubmit={(animal: Animal) => {
+          setFormDialog(()=> ({open: false}));
+          onSave(animal);
+        }}
+        open={formDialog.open}
+        onClose={()=> setFormDialog(() => ({open: false}))}
+      />
+      <Fab
+        color="primary"
+        aria-label="Add"
+        onClick={()=> {
+          setFormDialog(() => ({open: true}));
+        }}
+      >
+        <AddIcon />
+      </Fab>
     </Grid>
   );
 }

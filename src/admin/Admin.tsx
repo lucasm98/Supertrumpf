@@ -1,10 +1,13 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import Animal from "../game/Animal";
+import update from "immutability-helper";
+
 import List from "./List";
+import Animal from "../game/Animal";
 
 export default function Admin() {
   const [animals, setAnimals] = useState<Animal[]>([]);
+
   useEffect(()=> {
     async function fetchData() {
       const cards = await axios.get<Animal[]>('http://localhost:3001/card');
@@ -18,5 +21,22 @@ export default function Admin() {
     setAnimals(animals => animals.filter((animal: Animal) => animal.id !== id));
   };
 
-  return <List animals={animals} onDelete={deleteAnimal} />;
+  const saveAnimal = async (animal: Animal) => {
+    const data = new FormData();
+    data.append('name', animal.name);
+    data.append('image', animal.image);
+    data.append('size', animal.size.toString());
+    data.append('weight', animal.weight.toString());
+    data.append('age', animal.age.toString());
+    data.append('offspring', animal.offspring.toString());
+    data.append('speed', animal.speed.toString());
+    const newAnimal = await axios.post('http://localhost:3001/card', data, {
+      headers: {
+        'content-type': 'multipart/form-data',
+      },
+    });
+    setAnimals(animals => update(animals, { $push: [newAnimal.data] }));
+  };
+
+  return <List animals={animals} onDelete={deleteAnimal} onSave={saveAnimal}/>;
 }

@@ -12,5 +12,11 @@ export default function Admin() {
     }
     fetchData();
   }, []);
-  return <List animals={animals} />;
+
+  const deleteAnimal = async (id: number) => {
+    await axios.delete(`http://localhost:3001/card/${id}`);
+    setAnimals(animals => animals.filter((animal: Animal) => animal.id !== id));
+  };
+
+  return <List animals={animals} onDelete={deleteAnimal} />;
 }

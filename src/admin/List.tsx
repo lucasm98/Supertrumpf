@@ -1,16 +1,21 @@
 import React, {ChangeEvent, useState, useCallback, MouseEvent} from "react";
 import { Paper, Table ,TableHead, TableRow, TableCell, TableBody, TextField, TableSortLabel, Grid, Hidden } from '@material-ui/core';
-import Animal from "../game/Animal";
-
 import {IconButton} from "@material-ui/core";
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
+import Animal from "../game/Animal";
+import ConfirmDialog from "./ConfirmDialog";
 
 interface Props {
   animals: Animal[];
+  onDelete: (id: number ) => void;
 }
 
-export default function List({animals}: Props) {
+export default function List({animals, onDelete}: Props) {
+  const [deleteDialog, setDeleteDialog] = useState<{
+    open: boolean;
+    id:number;
+  }>( {open:false, id:0});
   const [filter, setFilter] = useState('');
   const [sort, setSort] = useState<{
     orderBy: keyof Animal;
@@ -96,7 +101,11 @@ export default function List({animals}: Props) {
                       )
                     )}
                     <TableCell>
-                      <IconButton>
+                      <IconButton
+                        onClick={()=> {
+                          setDeleteDialog({open: true, id: animal.id!})
+                        }}
+                      >
                         <DeleteIcon/>
                       </IconButton>
                     </TableCell>
@@ -112,6 +121,20 @@ export default function List({animals}: Props) {
         </Paper>
       </Grid>
       <Grid item md={1} />
+      <ConfirmDialog
+        title="Wirklich löschen?"
+        text="Möchten Sie das gewählte Element wirklich löschen?"
+        open={deleteDialog.open}
+        onClose={confirm => {
+          if (confirm) {
+            onDelete(deleteDialog.id);
+          }
+          setDeleteDialog({
+            id: 0,
+            open: false,
+          });
+        }}
+      />
     </Grid>
   );
 }

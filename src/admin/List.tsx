@@ -1,5 +1,5 @@
-import React from "react";
-import { Paper, Table ,TableHead, TableRow, TableCell, TableBody } from '@material-ui/core';
+import React, {ChangeEvent, useState} from "react";
+import { Paper, Table ,TableHead, TableRow, TableCell, TableBody, TextField, TableSortLabel } from '@material-ui/core';
 import Animal from "../game/Animal";
 
 interface Props {
@@ -7,23 +7,76 @@ interface Props {
 }
 
 export default function List({animals}: Props) {
+  const [filter, setFilter] = useState('');
+  const [sort, setSort] = useState<{
+    orderBy: keyof Animal;
+    order: 'asc' | 'desc';
+  }>({
+    orderBy: 'name',
+    order: 'asc',
+  });
+
+  const createSortHandler = (columnId: keyof Animal) => {
+    return () => {
+      setSort({
+        orderBy: columnId,
+        order: sort.order === 'asc' ? 'desc' : 'asc',
+      });
+    };
+  };
+
   return (
     <Paper>
+      <TextField
+        label = "Liste filtern"
+        value = {filter}
+        onChange={(e: ChangeEvent<HTMLInputElement>) =>
+          setFilter(e.currentTarget.value)
+        }
+      />
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Name</TableCell>
-            {Object.keys(Animal.properties).map(property => (
+            <TableCell>
+              <TableSortLabel
+                active={sort.orderBy === 'name'}
+                direction={sort.order}
+                onClick={createSortHandler('name')}
+              >
+                Name
+              </TableSortLabel>
+            </TableCell>
+            {(Object.keys(Animal.properties) as (keyof Animal)[]).map(property => (
               <TableCell align="right" key={property}>
-                {Animal.properties[property].label}
-                {Animal.properties[property].unit !== '' &&
-                  ' ('+ Animal.properties[property].unit + ')'}
+                <TableSortLabel
+                  active={sort.orderBy === property}
+                  direction={sort.order}
+                  onClick={createSortHandler(property)}
+                >
+                  {Animal.properties[property].label}
+                  {Animal.properties[property].unit !== '' &&
+                    ' ('+ Animal.properties[property].unit + ')'}
+                </TableSortLabel>
               </TableCell>
             ))}
           </TableRow>
         </TableHead>
         <TableBody>
-          {animals.map(animal => (
+          {animals
+            .filter(animal =>
+              animal.name.toLowerCase().includes(filter.toLowerCase())
+            )
+            .sort((animalA: Animal, animalB: Animal) => {
+              let result = 0;
+              if(animalB[sort.orderBy]! < animalA[sort.orderBy]!) {
+                result = -1;
+              }
+              if(animalB[sort.orderBy]! > animalA[sort.orderBy]!) {
+                result = 1;
+              }
+              return sort.order === 'asc' ? result * -1 : result;
+            })
+            .map(animal => (
             <TableRow key={animal.id}>
               <TableCell>{animal.name}</TableCell>
               {(Object.keys(Animal.properties) as (keyof Animal)[]).map(

@@ -120,16 +120,20 @@ export default function List({animals, onDelete, onSave}: Props) {
                     )}
                     <TableCell>
                       <IconButton
-                        onClick={()=>
-                          setFormDialog(()=> ({open: true, animal}))
-                      }
+                        onClick={() => {
+                          setDeleteDialog({ open: true, id: animal.id! });
+                        }}
                       >
-                        <DeleteIcon/>
+                        <DeleteIcon />
                       </IconButton>
                     </TableCell>
                     <TableCell>
-                      <IconButton>
-                        <EditIcon/>
+                      <IconButton
+                        onClick={() =>
+                          setFormDialog(() => ({ open: true, animal }))
+                        }
+                      >
+                        <EditIcon />
                       </IconButton>
                     </TableCell>
                   </TableRow>

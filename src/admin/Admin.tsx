@@ -30,6 +30,7 @@ export default function Admin() {
     data.append('age', animal.age.toString());
     data.append('offspring', animal.offspring.toString());
     data.append('speed', animal.speed.toString());
+    console.log(data);
     if(animal.id) {
       const updateAnimal = await axios.put(
         `http://localhost:3001/card/${animal.id}`,

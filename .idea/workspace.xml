@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/Form.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/Form.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/List.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/Admin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/Admin.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

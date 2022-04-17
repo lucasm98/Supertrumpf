@@ -30,12 +30,30 @@ export default function Admin() {
     data.append('age', animal.age.toString());
     data.append('offspring', animal.offspring.toString());
     data.append('speed', animal.speed.toString());
-    const newAnimal = await axios.post('http://localhost:3001/card', data, {
-      headers: {
-        'content-type': 'multipart/form-data',
-      },
-    });
-    setAnimals(animals => update(animals, { $push: [newAnimal.data] }));
+    if(animal.id) {
+      const updateAnimal = await axios.put(
+        `http://localhost:3001/card/${animal.id}`,
+        data,
+        {
+          headers: {
+            'content-type': 'multipart/form-data',
+          },
+        }
+      );
+      setAnimals(animals => {
+        const index = animals.findIndex(
+          animal => animal.id === updateAnimal.data.id
+        );
+        return update(animals, { [index]: { $set: updateAnimal.data } });
+      });
+    } else {
+      const newAnimal = await axios.post('http://localhost:3001/card', data, {
+        headers: {
+          'content-type': 'multipart/form-data',
+        },
+      });
+      setAnimals(animals => update(animals, {$push: [newAnimal.data]}));
+    }
   };
 
   return <List animals={animals} onDelete={deleteAnimal} onSave={saveAnimal}/>;

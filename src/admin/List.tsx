@@ -32,6 +32,7 @@ export default function List({animals, onDelete, onSave}: Props) {
   }>( {open:false, id:0});
   const [formDialog, setFormDialog] = useState<{
     open: boolean;
+    animal?: Animal;
   }>({open: false});
   const [filter, setFilter] = useState('');
   const [sort, setSort] = useState<{
@@ -119,9 +120,9 @@ export default function List({animals, onDelete, onSave}: Props) {
                     )}
                     <TableCell>
                       <IconButton
-                        onClick={()=> {
-                          setDeleteDialog({open: true, id: animal.id!})
-                        }}
+                        onClick={()=>
+                          setFormDialog(()=> ({open: true, animal}))
+                      }
                       >
                         <DeleteIcon/>
                       </IconButton>
@@ -157,6 +158,7 @@ export default function List({animals, onDelete, onSave}: Props) {
           setFormDialog(()=> ({open: false}));
           onSave(animal);
         }}
+        animal={formDialog.animal}
         open={formDialog.open}
         onClose={()=> setFormDialog(() => ({open: false}))}
       />

@@ -7,3 +7,8 @@ npm-check-updates -u
 yarn upgrade
 yarn outdated
 yarn install
+
+Warning: <Field render> has been deprecated and will be removed in future versions of Formik.
+Please use a child callback function instead.
+To get rid of this warning, replace <Field name="name" render={({field, form}) => ...} />
+with <Field name="name">{({field, form, meta}) => ...}</Field>

@@ -21,14 +21,7 @@
       "speed": 30
     },
     {
-      "id": 3,
-      "name": "Nashorn",
-      "image": "placeholder.png",
-      "size": 1.9,
-      "weight": 2300,
-      "age": 50,
-      "offspring": 1,
-      "speed": 50
+      "id": 3
     },
     {
       "id": 4,

@@ -1,14 +1,14 @@
 {
   "card": [
     {
-      "id": 1,
       "name": "Elefant",
       "image": "placeholder.png",
       "size": 3.3,
       "weight": 6000,
       "age": 70,
       "offspring": 1,
-      "speed": 40
+      "speed": 40,
+      "id": 1
     },
     {
       "id": 2,
@@ -39,6 +39,16 @@
       "age": 70,
       "offspring": 60,
       "speed": 29
+    },
+    {
+      "name": "Lucas",
+      "image": "placeholder.png",
+      "size": "1.8",
+      "weight": "80",
+      "age": "23",
+      "offspring": "1",
+      "speed": "20",
+      "id": 5
     }
   ]
 }

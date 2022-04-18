@@ -33,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/lucas/Documents/React/Supertrumpf/src/admin/useCardAdmin.ts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/home/lucas/Documents/React/Supertrumpf/node_modules/typescript/lib",
-    "two.files.diff.last.used.file": "/home/lucas/Documents/React/Supertrumpf/src/admin/useCardAdmin.ts",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lucas/Documents/React/Supertrumpf/src/admin/useCardAdmin.ts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/lucas/Documents/React/Supertrumpf/node_modules/typescript/lib&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/home/lucas/Documents/React/Supertrumpf/src/admin/useCardAdmin.ts&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />
@@ -116,6 +116,7 @@
       <workItem from="1650011015083" duration="4933000" />
       <workItem from="1650105523794" duration="10825000" />
       <workItem from="1650190241416" duration="3064000" />
+      <workItem from="1650271036892" duration="3742000" />
     </task>
     <servers />
   </component>

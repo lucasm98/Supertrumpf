@@ -1,5 +1,6 @@
 import React, {useCallback, useState} from 'react';
-import {BrowserRouter, Route, Routes, Navigate} from 'react-router-dom';
+import {Route, Routes, Navigate} from 'react-router-dom';
+import {useNavigate} from "react-router-dom";
 
 import Admin from './admin/Admin';
 import Game from './game/Game';
@@ -10,10 +11,13 @@ import Nav from './Nav';
 
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+  const navigate = useNavigate();
 
   const handelLogin = useCallback(
-    (username: string, password: string) =>
-      setLoggedIn(username === 'user' && password === 'password'),
+    (username: string, password: string) => {
+      setLoggedIn(username === 'user' && password === 'password');
+      navigate("/Game");
+    },
     []
   );
 
@@ -21,16 +25,14 @@ export default function App() {
 
 
   return (
-    <BrowserRouter>
+    <>
       {loggedIn && <Nav onLogout={handelLogout}/>}
       <Routes>
         <Route path="/" element={<Login onLogin={handelLogin} error={''}/>}/>
-        {//<Route path="/" element={<Navigate replace to="/Login"/>}/>
-        }
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/game" element={<Game title="Supertrumpf" />} />
+        <Route path="/admin" element={loggedIn? <Admin /> : <Navigate to="/"/>} />
+        <Route path="/game" element={loggedIn? <Game title="Supertrumpf" /> : <Navigate to="/"/>} />
         <Route path="*" element={<NotFound />}/>
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }

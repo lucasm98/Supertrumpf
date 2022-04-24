@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Nav.styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotFound.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotFound.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +122,7 @@
       <workItem from="1650292415896" duration="2459000" />
       <workItem from="1650468298890" duration="3856000" />
       <workItem from="1650638757093" duration="5039000" />
-      <workItem from="1650791017363" duration="1093000" />
+      <workItem from="1650791017363" duration="4969000" />
     </task>
     <servers />
   </component>

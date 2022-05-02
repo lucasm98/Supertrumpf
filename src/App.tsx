@@ -10,7 +10,7 @@ import NotFound from "./NotFound";
 import Nav from './Nav';
 
 export default function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
   const navigate = useNavigate();
 
   const handelLogin = useCallback(
@@ -18,21 +18,29 @@ export default function App() {
       setLoggedIn(username === 'user' && password === 'password');
       navigate("/Game");
     },
-    []
+    [navigate]
   );
 
-  const handelLogout = useCallback(()=> setLoggedIn(false), []);
+  const handelLogout = useCallback(()=> {
+    setLoggedIn(false);
+  }, []);
 
+  const styles = {
+    marginTop: '64px',
+  } as const;
 
   return (
     <>
       {loggedIn && <Nav onLogout={handelLogout}/>}
-      <Routes>
-        <Route path="/" element={<Login onLogin={handelLogin} error={''}/>}/>
-        <Route path="/admin" element={loggedIn? <Admin /> : <Navigate to="/"/>} />
-        <Route path="/game" element={loggedIn? <Game title="Supertrumpf" /> : <Navigate to="/"/>} />
-        <Route path="*" element={<NotFound />}/>
-      </Routes>
+      <div style={styles}>
+        <Routes>
+          <Route path="/" element={loggedIn ? <Navigate to="/game" /> : <Login onLogin={handelLogin} error={''}/>}/>
+          <Route path="/admin/edit/:cardId" element={loggedIn ? <Admin /> : <Navigate to="/"/>} />
+          <Route path="/admin/*" element={loggedIn ? <Admin /> : <Navigate to="/"/>} />
+          <Route path="/game" element={loggedIn ? <Game title="Supertrumpf" /> : <Navigate to="/"/>} />
+          <Route path="*" element={<NotFound />}/>
+        </Routes>
+      </div>
     </>
   );
 }

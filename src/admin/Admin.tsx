@@ -1,12 +1,16 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import update from "immutability-helper";
+import {Routes, Route, useNavigate, useParams} from "react-router-dom";
 
 import List from "./List";
 import Animal from "../game/Animal";
+import Form from './Form';
 
 export default function Admin() {
   const [animals, setAnimals] = useState<Animal[]>([]);
+  const navigate = useNavigate();
+  const {cardId} = useParams<string>();
 
   useEffect(()=> {
     async function fetchData() {
@@ -58,7 +62,37 @@ export default function Admin() {
 
       setAnimals(animals => update(animals, {$push: [newAnimal.data]}));
     }
+    navigate("/admin");
   };
 
-  return <List animals={animals} onDelete={deleteAnimal} onSave={saveAnimal}/>;
+
+
+
+
+  return (
+    <>
+      <List animals={animals} onDelete={deleteAnimal} onSave={saveAnimal}/>
+      {{cardId}.cardId !== undefined && <Form
+        onSubmit={saveAnimal}
+        animal={animals.find(
+          animal => animal.id === parseInt({cardId}.cardId!)
+        )}
+        onClose={() => navigate("/admin")}
+        open
+      />}
+      <Routes>
+        <Route
+          path="new"
+          element={
+            <Form
+              onSubmit={saveAnimal}
+              onClose={()=>navigate("/admin")}
+              open
+            />
+          }
+        />
+      </Routes>
+
+    </>
+  );
 }

@@ -18,6 +18,7 @@ import Animal from "../game/Animal";
 import ConfirmDialog from "./ConfirmDialog";
 import Form from './Form';
 import { Fab } from "./List.styles";
+import {Link} from 'react-router-dom';
 
 interface Props {
   animals: Animal[];
@@ -128,13 +129,11 @@ export default function List({animals, onDelete, onSave}: Props) {
                       </IconButton>
                     </TableCell>
                     <TableCell>
-                      <IconButton
-                        onClick={() =>
-                          setFormDialog(() => ({ open: true, animal }))
-                        }
-                      >
-                        <EditIcon />
-                      </IconButton>
+                      <Link to={`/admin/edit/${animal.id}`}>
+                        <IconButton >
+                          <EditIcon />
+                        </IconButton>
+                      </Link>
                     </TableCell>
                   </TableRow>
                 ))}
@@ -166,15 +165,11 @@ export default function List({animals, onDelete, onSave}: Props) {
         open={formDialog.open}
         onClose={()=> setFormDialog(() => ({open: false}))}
       />
-      <Fab
-        color="primary"
-        aria-label="Add"
-        onClick={()=> {
-          setFormDialog(() => ({open: true}));
-        }}
-      >
-        <AddIcon />
-      </Fab>
+      <Link to={`/admin/new`}>
+        <Fab color="primary" aria-label="Add">
+          <AddIcon />
+        </Fab>
+      </Link>
     </Grid>
   );
 }

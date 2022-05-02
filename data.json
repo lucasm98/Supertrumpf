@@ -49,6 +49,26 @@
       "offspring": "1",
       "speed": "20",
       "id": 5
+    },
+    {
+      "name": "Fenja",
+      "image": "placeholder.png",
+      "size": "1.6",
+      "weight": "48",
+      "age": "22",
+      "offspring": "1",
+      "speed": "21",
+      "id": 6
+    },
+    {
+      "name": "Igel",
+      "image": "placeholder.png",
+      "size": "0.2",
+      "weight": "0.2",
+      "age": "5",
+      "offspring": "100",
+      "speed": "5",
+      "id": 7
     }
   ]
 }

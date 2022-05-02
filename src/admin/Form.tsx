@@ -41,52 +41,40 @@ export default function From({
             </DialogTitle>
             <DialogContent id="confirm-dialog-description">
               <div>
-                <Field
-                  id="name"
-                  name="name"
-                  render={({field} : FieldProps) => (
+                <Field id="name" name="name" >
+                  {({field} : FieldProps) => (
                     <TextField
                       {...field}
                       error={!!(errors.name && touched.name)}
                       label="Name" />
                   )}
-                />
+                </Field>
                 <ErrorMessage name="name" component="label"/>
               </div>
               <div>
-                <Field
-                  id="image"
-                  name="image"
-                  render={()=> (
-                    <Button variant="contained" component="label">
-                      Bild
-                      <input
-                        type="file"
-                        style={{display: 'none'}}
-                        onChange={event => {
-                          setFieldValue('image', event.currentTarget.files![0]);
-                        }}
-                      />
-                    </Button>
+                <Field id="image" name="image">
+                  {({field} : FieldProps) => (
+                    <TextField
+                      {...field}
+                      error={!!(errors.name && touched.name)}
+                      label="Name" />
                   )}
-                />
+                </Field>
                 <ErrorMessage name="image" component={Error}/>
               </div>
               {(Object.keys(Animal.properties) as (keyof Animal)[]).map(
                 property => {
                   return (
                     <div key={property}>
-                      <Field
-                        id={property}
-                        name={property}
-                        render={({field}: FieldProps) => (
+                      <Field id={property} name={property}>
+                        {({field}: FieldProps) => (
                           <TextField
                             error={!!(errors[property] && touched[property])}
                             {...field}
                             label={Animal.properties[property].label}
                           />
                         )}
-                      />
+                      </Field>
                       <ErrorMessage name={property} component={Error}/>
                     </div>
                   );

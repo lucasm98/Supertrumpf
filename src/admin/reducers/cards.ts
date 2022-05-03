@@ -1,0 +1,72 @@
+export default [
+  {
+    "name": "Elefant",
+    "image": "placeholder.png",
+    "size": 3.3,
+    "weight": 6000,
+    "age": 70,
+    "offspring": 1,
+    "speed": 40,
+    "id": 1
+  },
+  {
+    "id": 2,
+    "name": "Flusspferd",
+    "image": "placeholder.png",
+    "size": 1.5,
+    "weight": 1800,
+    "age": 50,
+    "offspring": 1,
+    "speed": 30
+  },
+  {
+    "id": 3,
+    "name": "Nashorn",
+    "image": "placeholder.png",
+    "size": 1.9,
+    "weight": 2300,
+    "age": 50,
+    "offspring": 1,
+    "speed": 50
+  },
+  {
+    "id": 4,
+    "name": "Krokodil",
+    "image": "placeholder.png",
+    "size": 5.2,
+    "weight": 1000,
+    "age": 70,
+    "offspring": 60,
+    "speed": 29
+  },
+  {
+    "name": "Lucas",
+    "image": "placeholder.png",
+    "size": 1.8,
+    "weight": 80,
+    "age": 23,
+    "offspring": 1,
+    "speed": 20,
+    "id": 5
+  },
+  {
+    "name": "Fenja",
+    "image": "placeholder.png",
+    "size": 1.6,
+    "weight": 48,
+    "age": 22,
+    "offspring": 1,
+    "speed": 21,
+    "id": 6
+  },
+  {
+    "name": "Igel",
+    "image": "placeholder.png",
+    "size": 0.2,
+    "weight": 0.2,
+    "age": 5,
+    "offspring": 100,
+    "speed": 5,
+    "id": 7
+  }
+];

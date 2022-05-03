@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import update from 'immutability-helper';
 import axios from 'axios';
 
-import Animal from './Animal';
+import Animal from '../shared/models/Animal';
 import selectRandomProperty from './selectRandomProperty';
 
 interface State {

@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import classNames from 'classnames';
 
 import './Card.scss';
-import Animal from './Animal';
+import Animal from '../shared/models/Animal';
 import DarkMode from './DarkMode';
 import CardTable from './CardTable';
 

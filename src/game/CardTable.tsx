@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { StyledProps } from 'styled-components';
 
-import Animal from './Animal';
+import Animal from '../shared/models/Animal';
 import { Td, Tr } from './CardTable.styles';
 
 interface Props {

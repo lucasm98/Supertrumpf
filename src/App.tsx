@@ -9,6 +9,17 @@ import Login from './login/Login';
 import NotFound from "./NotFound";
 import Nav from './Nav';
 
+import {Provider} from 'react-redux';
+
+let configureStore: Function;
+
+if(process.env.NODE_ENV === 'development'){
+  configureStore = require('./store/configureStore.dev').configureStore();
+} else {
+  configureStore = require('./store/configureStore.prod').configureStoreProd();
+}
+const store = configureStore();
+
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(true);
   const navigate = useNavigate();
@@ -30,7 +41,7 @@ export default function App() {
   } as const;
 
   return (
-    <>
+    <Provider store={store}>
       {loggedIn && <Nav onLogout={handelLogout}/>}
       <div style={styles}>
         <Routes>
@@ -41,6 +52,6 @@ export default function App() {
           <Route path="*" element={<NotFound />}/>
         </Routes>
       </div>
-    </>
+    </Provider>
   );
 }

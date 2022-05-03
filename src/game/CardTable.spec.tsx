@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Animal from './Animal';
+import Animal from '../shared/models/Animal';
 import CardTable from './CardTable';
 
 describe('CardTable', () => {

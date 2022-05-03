@@ -1,5 +1,5 @@
 export default class Animal {
-  static properties: { [key: string]: {label: string; unit: string}} = {
+  static properties: { [key: string]: { label: string; unit: string } } = {
     size: { label: 'Größe', unit: 'm' },
     weight: { label: 'Gewicht', unit: 'kg' },
     age: { label: 'Alter', unit: 'Jahre' },

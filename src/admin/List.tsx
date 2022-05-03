@@ -14,7 +14,7 @@ import {IconButton} from "@material-ui/core";
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import AddIcon from '@material-ui/icons/Add';
-import Animal from "../game/Animal";
+import Animal from "../shared/models/Animal";
 import ConfirmDialog from "./ConfirmDialog";
 import Form from './Form';
 import { Fab } from "./List.styles";

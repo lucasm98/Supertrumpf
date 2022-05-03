@@ -1,6 +1,6 @@
 import { useState, useCallback, ChangeEvent} from "react";
 import update from "immutability-helper";
-import Animal from "../game/Animal";
+import Animal from "../shared/models/Animal";
 
 export default function useCardAdmin(
   initialAnimal: Animal = new Animal('', '', 0, 0, 0, 0, 0)

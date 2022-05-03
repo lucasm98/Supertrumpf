@@ -12,3 +12,19 @@ Warning: <Field render> has been deprecated and will be removed in future versio
 Please use a child callback function instead.
 To get rid of this warning, replace <Field name="name" render={({field, form}) => ...} />
 with <Field name="name">{({field, form, meta}) => ...}</Field>
+
+
+    "plugins": [
+      "react-hooks"
+    ],
+
+     '({ name: string; image: string; size: number; weight: number; age: number; offspring: number; speed: number; id: number; } |
+     { name: string; image: string; size: string; weight: string; age: string; offspring: string; speed: string; id: number; })[]'
+     is not assignable to type 'Animal[]'.
+     Type '{ name: string; image: string; size: number; weight: number; age: number; offspring: number; speed: number; id: number; } |
+     { name: string; image: string; size: string; weight: string; age: string; offspring: string; speed: string; id: number; }'
+     is not assignable to type 'Animal'.
+     Type '{ name: string; image: string; size: string; weight: string; age: string; offspring: string; speed: string; id: number; }'
+     is not assignable to type 'Animal'.
+     Types of property 'size' are incompatible.
+     Type 'string' is not assignable to type 'number | ''';'.

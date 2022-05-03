@@ -1,4 +1,4 @@
-import Animal from './Animal';
+import Animal from '../shared/models/Animal';
 
 function selectRandomProperty() {
   const properties = Object.keys(Animal.properties);

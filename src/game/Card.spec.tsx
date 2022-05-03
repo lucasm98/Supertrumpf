@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import Card from "./Card";
-import Animal from "./Animal";
+import Animal from "../shared/models/Animal";
 
 describe("Card", () => {
   describe("Snapshots", () => {

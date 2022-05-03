@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import {render, waitFor, cleanup, fireEvent} from '@testing-library/react';
 import Game from './Game';
-import Animal from "./Animal";
+import Animal from "../shared/models/Animal";
 import CardTable from "./CardTable";
 
 jest.mock('axios');

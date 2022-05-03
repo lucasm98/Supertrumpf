@@ -4,7 +4,7 @@ import update from "immutability-helper";
 import {Routes, Route, useNavigate, useParams} from "react-router-dom";
 
 import List from "./List";
-import Animal from "../game/Animal";
+import Animal from "../shared/models/Animal";
 import Form from './Form';
 
 export default function Admin() {

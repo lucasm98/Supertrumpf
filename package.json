@@ -9,22 +9,24 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^14.1.1",
     "@types/jest": "^27.4.1",
-    "@types/node": "^17.0.24",
-    "@types/react": "^18.0.5",
-    "@types/react-dom": "^18.0.1",
-    "axios": "^0.26.1",
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "formik": "^2.2.9",
     "immutability-helper": "^3.1.1",
     "n": "^8.2.0",
     "radium": "^0.26.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
     "styled-components": "^5.3.5",
     "typeface-roboto": "^1.1.13",
-    "typescript": "^4.6.3",
+    "typescript": "^4.6.4",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
@@ -35,16 +37,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "plugins": [
-      "react-hooks"
-    ],
     "extends": [
       "react-app",
       "react-app/jest"
-    ],
-    "rules": {
-      "react-hooks/rules-of-hooks": "error"
-    }
+    ]
   },
   "browserslist": {
     "production": [
@@ -61,21 +57,25 @@
   "devDependencies": {
     "@types/classnames": "^2.3.1",
     "@types/radium": "^0.24.4",
+    "@types/react-redux": "^7.1.24",
     "@types/react-router-dom": "^5.3.3",
     "@types/react-test-renderer": "^18.0.0",
     "@types/styled-components": "^5.1.25",
     "@types/yup": "^0.29.13",
-    "eslint": "^8.13.0",
+    "eslint": "^8.14.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "jest": "^27.5.1",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^28.0.3",
     "json-server": "^0.17.0",
     "node-sass": "^7.0.1",
     "prettier": "^2.6.2",
     "prop-types": "^15.8.1",
-    "react-test-renderer": "^18.0.0"
+    "react-test-renderer": "^18.1.0",
+    "redux-devtools": "^3.7.0",
+    "redux-devtools-extension": "^2.13.9"
   }
 }

@@ -4,7 +4,7 @@ import { Formik, ErrorMessage, FieldProps} from "formik";
 import validationSchema from "./validationSchema";
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button} from "@material-ui/core";
 
-import Animal from "../game/Animal";
+import Animal from "../shared/models/Animal";
 
 interface Props {
   onSubmit: (animal: Animal) => void;

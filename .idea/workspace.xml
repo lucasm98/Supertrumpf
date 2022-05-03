@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/admin/reducers/admin.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/admin/reducers/cards.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/rootReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/configureStore.dev.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/configureStore.prod.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Help.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/Admin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/Admin.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/Form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/List.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/useCardAdmin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/useCardAdmin.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Animal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/models/Animal.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Card.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Card.spec.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/CardTable.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CardTable.spec.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/CardTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/CardTable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Game.spec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.spec.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/selectRandomProperty.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/selectRandomProperty.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/useCards.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/useCards.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/configureStore.dev.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/configureStore.dev.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +129,7 @@
       <workItem from="1651495893395" duration="5705000" />
       <workItem from="1651505641431" duration="427000" />
       <workItem from="1651506083699" duration="2584000" />
-      <workItem from="1651583760391" duration="3125000" />
+      <workItem from="1651583760391" duration="3454000" />
     </task>
     <servers />
   </component>

@@ -14,9 +14,9 @@ import {Provider} from 'react-redux';
 let configureStore: Function;
 
 if(process.env.NODE_ENV === 'development'){
-  configureStore = require('./store/configureStore.dev').configureStore();
+  configureStore = require('./store/configureStore.dev').configureStore;
 } else {
-  configureStore = require('./store/configureStore.prod').configureStoreProd();
+  configureStore = require('./store/configureStore.prod').configureStoreProd;
 }
 const store = configureStore();
 

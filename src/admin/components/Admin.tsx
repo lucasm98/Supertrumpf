@@ -3,22 +3,14 @@ import axios from "axios";
 import update from "immutability-helper";
 import {Routes, Route, useNavigate, useParams} from "react-router-dom";
 
-import List from "./List";
-import Animal from "../shared/models/Animal";
-import Form from './Form';
+import List from './List/List.container';
+import Animal from "../../shared/models/Animal";
+import Form from '../components/Form/Form.container';
 
 export default function Admin() {
   const [animals, setAnimals] = useState<Animal[]>([]);
   const navigate = useNavigate();
   const {cardId} = useParams<string>();
-
-  useEffect(()=> {
-    async function fetchData() {
-      const cards = await axios.get<Animal[]>('http://localhost:3001/card');
-      setAnimals(cards.data);
-    }
-    fetchData();
-  }, []);
 
   const deleteAnimal = async (id: number) => {
     await axios.delete(`http://localhost:3001/card/${id}`);
@@ -65,20 +57,13 @@ export default function Admin() {
     navigate("/admin");
   };
 
-
-
-
-
   return (
     <>
-      <List animals={animals} onDelete={deleteAnimal} onSave={saveAnimal}/>
+      <List />
       {{cardId}.cardId !== undefined && <Form
         onSubmit={saveAnimal}
-        animal={animals.find(
-          animal => animal.id === parseInt({cardId}.cardId!)
-        )}
+        id={parseInt({cardId}.cardId!)}
         onClose={() => navigate("/admin")}
-        open
       />}
       <Routes>
         <Route
@@ -86,8 +71,8 @@ export default function Admin() {
           element={
             <Form
               onSubmit={saveAnimal}
+              id={parseInt({cardId}.cardId!)}
               onClose={()=>navigate("/admin")}
-              open
             />
           }
         />

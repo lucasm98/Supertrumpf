@@ -7,7 +7,8 @@ export default [
     "age": 70,
     "offspring": 1,
     "speed": 40,
-    "id": 1
+    "id": 1,
+    "favourite": true
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@ export default [
     "weight": 1800,
     "age": 50,
     "offspring": 1,
-    "speed": 30
+    "speed": 30,
+    "favourite": false
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@ export default [
     "weight": 2300,
     "age": 50,
     "offspring": 1,
-    "speed": 50
+    "speed": 50,
+    "favourite": false
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@ export default [
     "weight": 1000,
     "age": 70,
     "offspring": 60,
-    "speed": 29
+    "speed": 29,
+    "favourite": false
   },
   {
     "name": "Lucas",
@@ -47,17 +51,19 @@ export default [
     "age": 23,
     "offspring": 1,
     "speed": 20,
-    "id": 5
+    "id": 5,
+    "favourite": true
   },
   {
     "name": "Fenja",
     "image": "placeholder.png",
-    "size": 1.6,
-    "weight": 48,
-    "age": 22,
+    "size": 1.58,
+    "weight": 45,
+    "age": 23,
     "offspring": 1,
-    "speed": 21,
-    "id": 6
+    "speed": 3,
+    "id": 6,
+    "favourite": true
   },
   {
     "name": "Igel",
@@ -67,6 +73,7 @@ export default [
     "age": 5,
     "offspring": 100,
     "speed": 5,
-    "id": 7
+    "id": 7,
+    "favourite": true
   }
 ];

@@ -1,27 +1,28 @@
 import React from "react";
 import { Form, Error, Field, TextField } from './Form.styles';
 import { Formik, ErrorMessage, FieldProps} from "formik";
-import validationSchema from "./validationSchema";
+import validationSchema from "../../validationSchema";
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button} from "@material-ui/core";
 
-import Animal from "../shared/models/Animal";
+import Animal from "../../../shared/models/Animal";
 
 interface Props {
   onSubmit: (animal: Animal) => void;
-  animal?: Animal;
-  open: boolean;
   onClose: () => void;
+  getAnimal: (id?: number) => Animal;
+  id?: number;
 }
 
 export default function From({
   onSubmit,
-  animal = new Animal('', '', '', '', '', '', ''),
-  open,
+  getAnimal,
   onClose,
+  id
 }: Props) {
+  let animal = getAnimal(id);
   return (
     <Dialog
-      open={open}
+      open={true}
       onClose={onClose}
       aria-labelledby="form-dialog-title"
       aria-describedby="form-dialog-description"

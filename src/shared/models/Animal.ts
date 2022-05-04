@@ -8,6 +8,7 @@ export default class Animal {
   };
 
   public id?: number;
+  public favourite? = false;
 
   constructor(
     public name: string,

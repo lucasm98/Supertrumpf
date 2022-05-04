@@ -14,16 +14,16 @@ import {IconButton} from "@material-ui/core";
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import AddIcon from '@material-ui/icons/Add';
-import Animal from "../shared/models/Animal";
-import ConfirmDialog from "./ConfirmDialog";
-import Form from './Form';
+import Animal from "../../../shared/models/Animal";
+import ConfirmDialog from "../../ConfirmDialog";
+import Form from '../Form/Form';
 import { Fab } from "./List.styles";
 import {Link} from 'react-router-dom';
 
 interface Props {
   animals: Animal[];
   onDelete: (id: number ) => void;
-  onSave: (animal: Animal) => void;
+  onSave?: (animal: Animal) => void;
 }
 
 export default function List({animals, onDelete, onSave}: Props) {
@@ -31,10 +31,6 @@ export default function List({animals, onDelete, onSave}: Props) {
     open: boolean;
     id:number;
   }>( {open:false, id:0});
-  const [formDialog, setFormDialog] = useState<{
-    open: boolean;
-    animal?: Animal;
-  }>({open: false});
   const [filter, setFilter] = useState('');
   const [sort, setSort] = useState<{
     orderBy: keyof Animal;
@@ -148,22 +144,13 @@ export default function List({animals, onDelete, onSave}: Props) {
         open={deleteDialog.open}
         onClose={confirm => {
           if (confirm) {
-            onDelete(deleteDialog.id);
+            onDelete!(deleteDialog.id);
           }
           setDeleteDialog({
             id: 0,
             open: false,
           });
         }}
-      />
-      <Form
-        onSubmit={(animal: Animal) => {
-          setFormDialog(()=> ({open: false}));
-          onSave(animal);
-        }}
-        animal={formDialog.animal}
-        open={formDialog.open}
-        onClose={()=> setFormDialog(() => ({open: false}))}
       />
       <Link to={`/admin/new`}>
         <Fab color="primary" aria-label="Add">

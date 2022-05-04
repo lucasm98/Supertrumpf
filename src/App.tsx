@@ -2,7 +2,7 @@ import React, {useCallback, useState} from 'react';
 import {Route, Routes, Navigate} from 'react-router-dom';
 import {useNavigate} from "react-router-dom";
 
-import Admin from './admin/Admin';
+import Admin from './admin/components/Admin';
 import Game from './game/Game';
 import Login from './login/Login';
 

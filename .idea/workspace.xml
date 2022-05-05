@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/admin/actions/admin.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/admin/components/Form/Form.container.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/admin/components/List/List.container.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/admin/selectors/admin.selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/Admin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/Admin.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/Form.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/Form/Form.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/Form/Form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/List.styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/List/List.styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/List/List.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/actions/admin.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/actions/admin.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/components/Admin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/Admin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/components/Form/Form.container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/Form/Form.container.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/components/List/List.container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/List/List.container.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/admin/reducers/admin.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/reducers/admin.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/reducers/cards.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/reducers/cards.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/models/Animal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/models/Animal.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +138,8 @@
       <workItem from="1651506083699" duration="2584000" />
       <workItem from="1651583760391" duration="4309000" />
       <workItem from="1651663027845" duration="2434000" />
-      <workItem from="1651673926770" duration="3585000" />
+      <workItem from="1651673926770" duration="4913000" />
+      <workItem from="1651736483015" duration="2415000" />
     </task>
     <servers />
   </component>

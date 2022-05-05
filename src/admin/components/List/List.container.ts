@@ -3,7 +3,7 @@ import List from './List';
 import { AppState} from "../../../reducers/rootReducer";
 import { getFavourites} from "../../selectors/admin.selectors";
 import { Dispatch} from "redux";
-import { DeleteCardAction, deleteCardAction} from "../../actions/admin.actions";
+import { deleteCardAction} from "../../actions/admin.actions";
 
 function mapStateToProps(state: AppState) {
   return {
@@ -12,7 +12,7 @@ function mapStateToProps(state: AppState) {
 }
 
 
-function mapDispatchToProps(dispatch: Dispatch<DeleteCardAction>) {
+function mapDispatchToProps(dispatch: Dispatch) {
   return {
     onDelete(id: number) {
       dispatch(deleteCardAction(id));

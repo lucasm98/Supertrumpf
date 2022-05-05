@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7777311f-40a4-419c-891c-5058113d5b3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/actions/admin.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/actions/admin.actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/admin/components/Admin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/Admin.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/components/Form/Form.container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/Form/Form.container.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/components/List/List.container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/List/List.container.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/reducers/admin.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/reducers/admin.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/components/List/List.container.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/components/List/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/components/List/List.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +135,7 @@
       <workItem from="1651583760391" duration="4309000" />
       <workItem from="1651663027845" duration="2434000" />
       <workItem from="1651673926770" duration="4913000" />
-      <workItem from="1651736483015" duration="2415000" />
+      <workItem from="1651736483015" duration="3464000" />
     </task>
     <servers />
   </component>

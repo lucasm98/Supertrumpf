@@ -19,17 +19,16 @@ import ConfirmDialog from "../../ConfirmDialog";
 import Form from '../Form/Form';
 import { Fab } from "./List.styles";
 import {Link} from 'react-router-dom';
+import { useSelector, useDispatch} from "react-redux";
+import {deleteCardAction} from "../../actions/admin.actions";
+import {getFavourites} from "../../selectors/admin.selectors";
 
-interface Props {
-  animals: Animal[];
-  onDelete: (id: number ) => void;
-  onSave?: (animal: Animal) => void;
-}
-
-export default function List({animals, onDelete, onSave}: Props) {
+export default function List() {
+  const dispatch = useDispatch();
+  const onDelete = (id: number) => dispatch(deleteCardAction(id));
   const [deleteDialog, setDeleteDialog] = useState<{
     open: boolean;
-    id:number;
+    id: number;
   }>( {open:false, id:0});
   const [filter, setFilter] = useState('');
   const [sort, setSort] = useState<{
@@ -91,7 +90,7 @@ export default function List({animals, onDelete, onSave}: Props) {
               </TableRow>
             </TableHead>
             <TableBody>
-              {animals
+              {useSelector(getFavourites)
                 .filter(animal =>
                   animal.name.toLowerCase().includes(filter.toLowerCase())
                 )

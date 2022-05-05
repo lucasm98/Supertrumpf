@@ -1,6 +1,6 @@
 import React from "react";
 import {Routes, Route, useNavigate, useParams} from "react-router-dom";
-import List from './List/List.container';
+import List from './List/List';
 import Form from '../components/Form/Form.container';
 
 export default function Admin() {

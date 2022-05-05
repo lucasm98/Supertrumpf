@@ -1,6 +1,6 @@
 import { deprecated } from "typesafe-actions"
 import Animal from "../../shared/models/Animal";
-const { createAction, createStandardAction, createCustomAction } = deprecated;
+const { createStandardAction } = deprecated;
 
 export const DELETE_CARD = 'DELETE_CARD';
 export type DELETE_CARD = typeof DELETE_CARD;

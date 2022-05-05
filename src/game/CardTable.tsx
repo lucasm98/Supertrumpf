@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { StyledProps } from 'styled-components';
+import styled from 'styled-components';
 
 import Animal from '../shared/models/Animal';
 import { Td, Tr } from './CardTable.styles';

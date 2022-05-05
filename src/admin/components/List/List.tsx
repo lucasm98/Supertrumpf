@@ -16,7 +16,6 @@ import EditIcon from '@material-ui/icons/Edit';
 import AddIcon from '@material-ui/icons/Add';
 import Animal from "../../../shared/models/Animal";
 import ConfirmDialog from "../../ConfirmDialog";
-import Form from '../Form/Form';
 import { Fab } from "./List.styles";
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch} from "react-redux";

@@ -1,7 +1,6 @@
 import {AppState} from "../../reducers/rootReducer";
 import { createSelector} from "reselect";
 import Animal from "../../shared/models/Animal";
-import useCards from "../reducers/cards";
 
 export function getCards(state: AppState): Animal[] {
   return state.admin.cards;

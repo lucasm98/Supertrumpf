@@ -28,6 +28,7 @@ export default function useCards(): [State, (property: keyof Animal) => void] {
       dealCards(data);
     };
     fetchData();
+
   }, []);
 
   useEffect(() => {
@@ -55,20 +56,23 @@ export default function useCards(): [State, (property: keyof Animal) => void] {
     let playersTurn = state.playersTurn;
 
     const firstPlayer = state.player[0];
-    let player = update(state.player, {$splice: [[0, 1]]});
+    let player = update(state.player, { $splice: [[0, 1]] });
     const firstComputer = state.computer[0];
-    let computer = update(state.computer, {$splice: [[0, 1]]});
-    if(firstPlayer[property]! > firstComputer[property]!) {
-      playersTurn = true;
-      player = update(player, { $push: [firstPlayer, firstComputer]});
-      if(computer.length === 0){
-        alert('Player wins'); return;
-      }
-    } else if(firstPlayer[property]! < firstComputer[property]!){
-      playersTurn = false;
-      computer = update(computer, { $push: [firstPlayer,firstComputer]});
+    let computer = update(state.computer, { $splice: [[0, 1]] });
 
-      if(player.length === 0) {
+    if (firstPlayer[property]! > firstComputer[property]!) {
+      playersTurn = true;
+      player = update(player, { $push: [firstPlayer, firstComputer] });
+
+      if(computer.length === 0){
+        alert('Player wins');
+        return;
+      }
+    } else if (firstPlayer[property]! < firstComputer[property]!){
+      playersTurn = false;
+      computer = update(computer, { $push: [firstPlayer, firstComputer] });
+
+      if (player.length === 0) {
         alert('Computer wins');
         return;
       }
@@ -92,8 +96,8 @@ export default function useCards(): [State, (property: keyof Animal) => void] {
   function play(property: keyof Animal) {
     setState(state =>
       update(state, {
-        selectedProperty: { $set: property},
-        computerUncovered: { $set: true},
+        selectedProperty: { $set: property },
+        computerUncovered: { $set: true },
       })
     );
   }
